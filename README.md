@@ -17,7 +17,6 @@
 | `insights` | 💡 萃取核心洞见与知识 | Markdown 文件 |
 | `skill` | 🃏 生成可复用的技能卡片 | Markdown 文件 |
 | `serve` | 🌐 启动 Web 图形界面 (Streamlit) | Web 浏览器 |
-| `license` | 🔑 授权码管理 | 控制台 |
 
 ## 🚀 快速开始
 
@@ -50,11 +49,6 @@ python bookmind.py read 书籍.epub
 
 # 🌐 启动 Web 图形界面
 python bookmind.py serve
-
-# 🔑 密钥管理
-python bookmind.py license --show       # 查看当前授权
-python bookmind.py license --activate KEY  # 激活 Pro 密钥
-python bookmind.py license --gen-pro    # 生成 Pro 密钥（管理员）
 ```
 
 ## 📁 输出示例
@@ -73,37 +67,16 @@ python bookmind.py license --gen-pro    # 生成 Pro 密钥（管理员）
 | 📕 `PDF` | ✅ 良好 | PyMuPDF / pypdf 双引擎 |
 | 📝 `Markdown` | ✅ 完美 | 原生支持 |
 
-## 💰 变现方案
+## 💰 支持项目
 
-### 当前免费层 ✅
-- 本地运行，完全免费
-- 无 API 调用费用
-- 无限次使用
+如果您觉得 BookMind 有用，欢迎打赏支持开发 ❤️
 
-### Pro 版本（计划中）⭐
-```
-- Web GUI 界面
-- 批量处理多本书
-- 知识图谱生成
-- Anki 闪卡导出
-- 一键发布到 GitHub Pages
-```
-**定价: ¥29.9 / 永久授权**
-
-### 企业版 🏢
-```
-- Web API 服务
-- 多用户管理
-- LDAP/OAuth 集成
-- 私有部署支持
-- 定制模型微调
-```
-**定价: ¥999 / 年起**
-
-### 如何购买
-1. **GitHub Sponsors** — [赞助获取 Pro 密钥](https://github.com/sponsors/your-username)
-2. **爱发电** — [afdian.com](https://afdian.com)
-3. **直接转账** — 微信/支付宝（联系作者）
+<p align="center">
+  <img src="assets/wechat-pay-qrcode.jpg" alt="微信收款码" width="250"/>
+</p>
+<p align="center">
+  <strong>微信收款</strong> — 您的心意是嘻嘻持续创造的动力 🚀
+</p>
 
 ## 🤝 贡献
 
@@ -112,7 +85,10 @@ python bookmind.py license --gen-pro    # 生成 Pro 密钥（管理员）
 - 遵循 PEP 8
 - 添加必要的文档
 
+## 🧑‍💼 项目管理
+
+本仓库由 **嘻嘻 (Xixi)** 代为维护运营。如有问题欢迎提 Issue。
+
 ## 📜 许可
 
 MIT License — 免费使用、修改、分发。
-Pro 功能需授权密钥。
