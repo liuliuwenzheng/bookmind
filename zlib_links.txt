@@ -1,0 +1,105 @@
+0: "Z-Library Home" -> /
+1: "我的图书馆" -> /profile#tags
+2: "English" -> http://z-lib.fm/s/1984%20George%20Orwell
+3: "Русский" -> http://ru.z-lib.fm/s/1984%20George%20Orwell
+4: "Español" -> http://es.z-lib.fm/s/1984%20George%20Orwell
+5: "Italiano" -> http://it.z-lib.fm/s/1984%20George%20Orwell
+6: "Ελληνικά" -> http://el.z-lib.fm/s/1984%20George%20Orwell
+7: "اللغة العربية" -> http://ar.z-lib.fm/s/1984%20George%20Orwell
+8: "Bahasa Indonesia" -> http://id.z-lib.fm/s/1984%20George%20Orwell
+9: "Bahasa Malaysia" -> http://ms.z-lib.fm/s/1984%20George%20Orwell
+10: "हिन्दी" -> http://hi.z-lib.fm/s/1984%20George%20Orwell
+11: "Deutsch" -> http://de.z-lib.fm/s/1984%20George%20Orwell
+12: "Français" -> http://fr.z-lib.fm/s/1984%20George%20Orwell
+13: "Português" -> http://pt.z-lib.fm/s/1984%20George%20Orwell
+14: "Українська" -> http://uk.z-lib.fm/s/1984%20George%20Orwell
+15: "Polski" -> http://pl.z-lib.fm/s/1984%20George%20Orwell
+17: "繁體中文" -> http://tw.z-lib.fm/s/1984%20George%20Orwell
+19: "Tiếng Việt" -> http://vi.z-lib.fm/s/1984%20George%20Orwell
+20: "Azərbaycan Dili" -> http://az.z-lib.fm/s/1984%20George%20Orwell
+21: "Հայոց լեզու" -> http://hy.z-lib.fm/s/1984%20George%20Orwell
+22: "ภาษาไทย" -> http://th.z-lib.fm/s/1984%20George%20Orwell
+23: "Türk Dili" -> http://tr.z-lib.fm/s/1984%20George%20Orwell
+24: "ქართველი" -> http://ka.z-lib.fm/s/1984%20George%20Orwell
+25: "বাংলা" -> http://bn.z-lib.fm/s/1984%20George%20Orwell
+26: "پښتو" -> http://ps.z-lib.fm/s/1984%20George%20Orwell
+27: "తెలుగు" -> http://te.z-lib.fm/s/1984%20George%20Orwell
+28: "اردو" -> http://ur.z-lib.fm/s/1984%20George%20Orwell
+30: "Srpski" -> http://sr.z-lib.fm/s/1984%20George%20Orwell
+31: "Български" -> http://bg.z-lib.fm/s/1984%20George%20Orwell
+36: "书籍请求" -> /requests
+37: "Z-Recommend" -> /users/zrecommended
+39: "最受欢迎" -> /popular
+43: "LibTalks阅读爱好者论坛" -> https://lib-talk.io/
+44: "Litera Reader在线打开并阅读文件" -> https://litera-reader.com/
+45: "Z-Access继续关注我们的图书馆!" -> https://zh.library-access.sk
+46: "Project blog关注我们的更新！" -> /blog
+47: "z-lib.sk" -> https://z-lib.sk
+48: "z-library.sk" -> https://z-library.sk
+49: "z-lib.gd" -> https://z-lib.gd
+50: "Save access info (TXT)" -> /access-info
+52: "Yes, I am." -> javascript://
+54: "support@z-lib.fm" -> mailto:support@z-lib.fm
+56: "通用搜索" -> /s
+57: "全文检索" -> /fulltext
+60: "书籍 (150+)" -> https://zh.z-lib.fm/s/1984%20George%20Orwell?content_type=book
+61: "文章                 (150+)" -> https://zh.z-lib.fm/s/1984%20George%20Orwell?content_type=article
+62: "From Head to Feet" -> https://payhip.com/b/M6f9b
+63: "← Prior" -> /s/1984%20George%20Orwell?page=1
+66: "Next →" -> /s/1984%20George%20Orwell?page=2
+67: "First" -> /s/1984%20George%20Orwell?page=1
+68: "Last" -> /s/1984%20George%20Orwell?page=3
+69: "阅读更多关于Z-Alerts的信息" -> /msgn/zalerts
+70: "添加书籍请求" -> /requests
+71: "进行捐款" -> /how-to-donate
+72: "官方途径" -> https://x.com/Z_Lib_official
+75: "Z-Library" -> /z-access#desktop_app_tab
+76: "Z-Library" -> /z-access#useful_link_tab
+78: "Z-Access" -> https://zh.library-access.sk
+79: "我们的任务" -> /mission
+80: "分享您的故事" -> /testimonials
+81: "Support us" -> https://www.change.org/zlibrary2023
+82: "机构支持" -> /request-help
+83: "支持作者" -> /promotion/books
+84: "LibTalks" -> https://lib-talk.io
+86: "DMCA" -> /dmca
+87: "Terms" -> /tos
+89: "Z-Library" -> https://z-library.sk
+90: "support@z-lib.fm" -> mailto: support@z-lib.fm
+91: "English" -> http://z-lib.fm/s/1984%20George%20Orwell
+92: "Русский" -> http://ru.z-lib.fm/s/1984%20George%20Orwell
+93: "Español" -> http://es.z-lib.fm/s/1984%20George%20Orwell
+94: "Italiano" -> http://it.z-lib.fm/s/1984%20George%20Orwell
+95: "Ελληνικά" -> http://el.z-lib.fm/s/1984%20George%20Orwell
+96: "اللغة العربية" -> http://ar.z-lib.fm/s/1984%20George%20Orwell
+97: "Bahasa Indonesia" -> http://id.z-lib.fm/s/1984%20George%20Orwell
+98: "Bahasa Malaysia" -> http://ms.z-lib.fm/s/1984%20George%20Orwell
+99: "हिन्दी" -> http://hi.z-lib.fm/s/1984%20George%20Orwell
+100: "Deutsch" -> http://de.z-lib.fm/s/1984%20George%20Orwell
+101: "Français" -> http://fr.z-lib.fm/s/1984%20George%20Orwell
+102: "Português" -> http://pt.z-lib.fm/s/1984%20George%20Orwell
+103: "Українська" -> http://uk.z-lib.fm/s/1984%20George%20Orwell
+104: "Polski" -> http://pl.z-lib.fm/s/1984%20George%20Orwell
+106: "繁體中文" -> http://tw.z-lib.fm/s/1984%20George%20Orwell
+108: "Tiếng Việt" -> http://vi.z-lib.fm/s/1984%20George%20Orwell
+109: "Azərbaycan Dili" -> http://az.z-lib.fm/s/1984%20George%20Orwell
+110: "Հայոց լեզու" -> http://hy.z-lib.fm/s/1984%20George%20Orwell
+111: "ภาษาไทย" -> http://th.z-lib.fm/s/1984%20George%20Orwell
+112: "Türk Dili" -> http://tr.z-lib.fm/s/1984%20George%20Orwell
+113: "ქართველი" -> http://ka.z-lib.fm/s/1984%20George%20Orwell
+114: "বাংলা" -> http://bn.z-lib.fm/s/1984%20George%20Orwell
+115: "پښتو" -> http://ps.z-lib.fm/s/1984%20George%20Orwell
+116: "తెలుగు" -> http://te.z-lib.fm/s/1984%20George%20Orwell
+117: "اردو" -> http://ur.z-lib.fm/s/1984%20George%20Orwell
+119: "Srpski" -> http://sr.z-lib.fm/s/1984%20George%20Orwell
+120: "Български" -> http://bg.z-lib.fm/s/1984%20George%20Orwell
+Btn 0: "" class="search-input-reset"
+Btn 1: "" class="search-input-button"
+Btn 2: "关闭" class="btnCloseMerchantPopup"
+Btn 3: "搜索" class=""
+Btn 4: "" class="z-modal__close-icon"
+Btn 5: "×" class="visible-xs-block close"
+Btn 6: "取消" class="z-btn z-btn-secondary z-btn-narrow"
+Btn 7: "创建" class="z-btn z-btn-primary z-btn-narrow"
+Btn 8: "×" class="close"
+Btn 9: "×" class="close"

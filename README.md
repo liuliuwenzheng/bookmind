@@ -16,6 +16,8 @@
 | `summarize` | 📋 AI 生成全书总结 | Markdown 文件 |
 | `insights` | 💡 萃取核心洞见与知识 | Markdown 文件 |
 | `skill` | 🃏 生成可复用的技能卡片 | Markdown 文件 |
+| `serve` | 🌐 启动 Web 图形界面 (Streamlit) | Web 浏览器 |
+| `license` | 🔑 授权码管理 | 控制台 |
 
 ## 🚀 快速开始
 
@@ -45,6 +47,14 @@ python bookmind.py skill 书籍.txt
 
 # 阅读
 python bookmind.py read 书籍.epub
+
+# 🌐 启动 Web 图形界面
+python bookmind.py serve
+
+# 🔑 密钥管理
+python bookmind.py license --show       # 查看当前授权
+python bookmind.py license --activate KEY  # 激活 Pro 密钥
+python bookmind.py license --gen-pro    # 生成 Pro 密钥（管理员）
 ```
 
 ## 📁 输出示例

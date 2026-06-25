@@ -26,3 +26,25 @@ Thumbs.db
 # Project specific
 _output/
 *.log
+
+# Temp/upload files
+upload_*.js
+upload_*.txt
+gh_*.json
+gh_*.txt
+
+# Temp/upload files
+upload_*.js
+upload_*.txt
+gh_*.json
+gh_*.txt
+
+# Z-Lib links (contain sensitive URLs)
+zlib_*.txt
+
+# License file
+.license
+
+# Test results
+*_result.txt
+*_debug.txt

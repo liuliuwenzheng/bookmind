@@ -22,19 +22,77 @@ def _read_txt(path: str) -> str:
         return f.read()
 
 def _read_pdf(path: str) -> str:
+    """Read PDF with OCR fallback for scanned documents."""
+    text = ""
+    
+    # Try PyMuPDF first
     try:
-        import fitz  # PyMuPDF
+        import fitz
         doc = fitz.open(path)
-        text = []
+        texts = []
         for page in doc:
-            text.append(page.get_text())
+            t = page.get_text()
+            if t.strip():
+                texts.append(t)
         doc.close()
-        return '\n\n'.join(text)
+        if texts and any(len(t) > 50 for t in texts):
+            return '\n\n'.join(texts)
     except ImportError:
-        # Fallback to pypdf
+        pass
+    
+    # Try pypdf as second fallback
+    try:
         from pypdf import PdfReader
         reader = PdfReader(path)
-        return '\n\n'.join(page.extract_text() for page in reader.pages)
+        texts = []
+        for page in reader.pages:
+            t = page.extract_text()
+            if t.strip():
+                texts.append(t)
+        if texts and any(len(t) > 50 for t in texts):
+            return '\n\n'.join(texts)
+    except ImportError:
+        pass
+    
+    # OCR fallback for scanned PDFs
+    try:
+        import pytesseract
+        from PIL import Image
+        import io
+        
+        # Try PyMuPDF for rendering
+        import fitz
+        doc = fitz.open(path)
+        texts = []
+        for i, page in enumerate(doc):
+            # Render page to image
+            pix = page.get_pixmap(dpi=200)
+            img_data = pix.tobytes("png")
+            img = Image.open(io.BytesIO(img_data))
+            # OCR
+            t = pytesseract.image_to_string(img, lang='chi_sim+eng')
+            if t.strip():
+                texts.append(f"[OCR Page {i+1}]\n{t}")
+        doc.close()
+        if texts:
+            return '\n\n'.join(texts)
+    except ImportError:
+        pass
+    except Exception as e:
+        pass
+    
+    # Ultimate fallback
+    if not text:
+        # Try pdfminer
+        try:
+            from pdfminer.high_level import extract_text
+            text = extract_text(path)
+            if text.strip():
+                return text
+        except ImportError:
+            pass
+    
+    return text or "[无法提取文本]"
 
 def _read_epub(path: str) -> str:
     import ebooklib

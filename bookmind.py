@@ -127,8 +127,47 @@ def cmd_read(args):
             print(f"\n... 还有 {len(chunks)-i-1} 个章节")
             break
 
+def cmd_serve(args):
+    """Start Streamlit web GUI."""
+    print("🌐 正在启动 BookMind Web 界面...")
+    web_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bookmind_web.py")
+    os.system(f'streamlit run "{web_path}"')
+
+def cmd_license(args):
+    """License key management."""
+    from src.license import get_license_status, save_license, generate_license, validate_license as vl
+    import sys
+    
+    if not args or args[0] == '--show':
+        status = get_license_status()
+        print(f"📋 当前授权状态:")
+        print(f"  级别: {status['level']}")
+        print(f"  类型: {status.get('level_name', '-')}")
+        print(f"  机器ID: {...}")
+        print(f"  有效: {status.get('valid', False)}")
+        return
+    
+    if args[0] == '--activate' and len(args) >= 2:
+        key = args[1]
+        result = vl(key)
+        if result.get('valid'):
+            save_license(key)
+            print(f"✅ 激活成功！{result.get('level_name')}")
+        else:
+            print(f"❌ 激活失败：{result.get('reason', '未知错误')}")
+        return
+    
+    if args[0] == '--gen-pro':
+        email = args[1] if len(args) >= 2 else "user@example.com"
+        key = generate_license("pro")
+        print(f"🔑 Pro 密钥: {key}")
+        print(f"  使用: python bookmind.py license --activate {key}")
+        return
+    
+    print("用法: python bookmind.py license [--show|--activate KEY|--gen-pro [email]]")
+
 if __name__ == '__main__':
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 2:
         print(__doc__)
         sys.exit(1)
     
@@ -140,6 +179,8 @@ if __name__ == '__main__':
         'summarize': cmd_summarize,
         'insights': cmd_insights,
         'skill': cmd_skill,
+        'serve': cmd_serve,
+        'license': cmd_license,
     }
     
     if command in commands:
